@@ -13,6 +13,7 @@ const Cardexp = ({
       <div>
         <Image
           priority="true"
+          loading="lazy"
           preview={false}
           src={imageUrl}
           alt="Project"

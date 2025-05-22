@@ -18,7 +18,7 @@ const Navbar = ({ params }) => {
         <div className="flex flex-wrap justify-center items-center">
           {menuItems.map((item, index) => (
             <Link key={index} href={item.path}>
-              <span className="px-4 text-[#FFFFFF] hover:text-[#c5c5c5] transition uppercase font-black">
+              <span className="px-4 text-[#FFFFFF] hover:text-[#c5c5c5] transition uppercase font-bold">
                 {item.label}
               </span>
             </Link>
