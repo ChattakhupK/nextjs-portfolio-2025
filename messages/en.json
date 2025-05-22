@@ -1,0 +1,74 @@
+{
+  "Navbar": {
+    "home": "home",
+    "contact": "contact"
+  },
+  "Lang": {
+    "en": "EN",
+    "th": "TH"
+  },
+  "Header": {
+    "sub": "Hello",
+    "title": "I’m Chattakhup Kinaubon",
+    "subtitle": "I’m passionate",
+    "and": "and"
+  },
+  "Footer": {
+    "title": "Do You Like My Work ?",
+    "subtitle": "Let's work together"
+  },
+  "TabBar": {
+    "about": "About",
+    "skill": "Skill",
+    "certificate": "Certificate",
+    "resume": "Resume",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "About": {
+    "aboutTitle": "About Me",
+    "aboutp": "I want to be a Font-End Developer to create impressive web applications and use new technologies to create the best web applications for users. My biggest dream right now is to be a Full Stack Developer. And now, even though I have graduated, I am still taking additional courses to achieve my dream.",
+    "aboutp1": "Is that I have experience in UX/UI Design and have worked in IT SUPPORT before. I also worked in a temporary company as a Web Developer and front-end for a short period of time.",
+    "aboutp2": "I don't expect much money, but I want it to be within the standard. I want to learn new things from work and have a friendly working environment. I hope I can work with you who are reading this. Thank you."
+  },
+  "Skill": {
+    "skillTitle": "Skill",
+    "skillp": "I'm skilled in modern front-end technologies including frameworks, libraries, and languages that help build dynamic and responsive web applications."
+  },
+  "Certificate": {
+    "certificateTitle": "Certificate",
+    "certificatep": "This certificate represents my achievements and dedication to personal growth and education.",
+    "loadMore": "loadmore"
+  },
+  "Resume": {
+    "resumeTitle": "Resume",
+    "resumep": "I hope this portfolio gives you an idea of ​​my skills and abilities. If you are interested in working with me or have any further questions, please feel free to contact me.",
+    "resumep1": "In my brief profile, some of the information may not be entirely up to date, but overall, it covers everything I’ve done so far, including my address and general status. If you’re interested, feel free to reach out using the details in the profile or visit the contact page. Thanks!"
+  },
+  "Contact": {
+    "contactTitle": "Contact Me",
+    "contactp": "If you have any questions, concerns, suggestions or comments about my work, I would love to hear from you. I am always ready to help and provide full information every step of the way, or to listen to feedback to improve my services.",
+    "name": "name",
+    "email": "email",
+    "detail": "message",
+    "send": "send",
+    "locat": "Soi Khlong Hok, Rangsit Subdistrict, Thanyaburi, Pathum Thani",
+    "phone": "085-855-4668",
+    "showmail": "MosT5140@hotmail.com"
+  },
+  "Experience": {
+    "experienceTitle": "Experience",
+    "experiencep": "This work reflects real experiences from actual practice and using the skills that are available. (Some works may have errors due to the database being lost because the database cannot be kept forever.)",
+    "e1": "This is a portfolio that is now in the 2025 and once again, the content is simple and easy to understand with new features like web-based messaging.",
+    "e2": "Front end web page during the time I was working on writing web pages for a company, following the brief I received.",
+    "e3": "Front end web page during the time I was working on writing web pages for a company, following the brief I received.",
+    "e4": "Try making a quiz game with scoring and giving points for answering simple questions.",
+    "e5": "This is my old portfolio that I made in 2024 and before I started working to gain more experience.",
+    "e6": "This is a very big project for me to make a website for selling products, with a shopping page, login system, etc.",
+    "e7": "When I first started practicing designing with figma, I tried making a LineMan UI APP for practice and learning. This is how to design a UI APP.",
+    "e8": "Try making a simple, one-page website that teaches you about stars using HTML and Responsive.",
+    "e9": "Creating a discussion board can be accomplished using HTML, CSS, Handlebars, and MySQL. The process begins with designing the webpage structure using HTML to include a form for posting new threads and a section for displaying existing threads. CSS is then applied to enhance the visual appeal and user experience of the site. Handlebars serves as a templating engine, allowing dynamic rendering of threads pulled from a MySQL database, which stores information such as titles and content. JavaScript is used to facilitate communication between the form and the MySQL database, enabling users to create and read threads seamlessly on the website.",
+    "e10": "When I first saw the website, I felt that it was not user-friendly, so I redesigned it to be simple and accessible.",
+    "e11": "Creating a chat website using React, Tailwind CSS, and Firebase offers a modern and efficient way to build real-time communication platforms. React provides a responsive and interactive user interface, while Tailwind CSS allows for rapid and customizable styling."
+  }
+}

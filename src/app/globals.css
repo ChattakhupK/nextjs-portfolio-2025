@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.container-box {
+  @apply w-full max-w-screen-xl mx-auto px-25 py-20;
+}
+
+.title-header-box {
+    @apply font-black text-[42px]
+}
