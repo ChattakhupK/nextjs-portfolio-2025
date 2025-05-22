@@ -5,7 +5,7 @@ const Header = () => {
   const t = useTranslations("Header");
 
   return (
-    <header className="bg-[url(https://i.ibb.co/5WfNBM3R/o0-AHAfo-WBACzi-A2-A9yip-VUEv2-CCIMFhg3sek-NA-noop.jpg)] h-[700px] bg-center bg-no-repeat bg-cover flex justify-center items-center">
+    <header className="bg-[url('/header.jpeg')] h-[700px] bg-center bg-no-repeat bg-cover flex justify-center items-center">
       {/* Overlay สีดำแบบโปร่ง */}
       <div className="absolute inset-0 bg-black opacity-20 z-0 h-[700px]"></div>
 

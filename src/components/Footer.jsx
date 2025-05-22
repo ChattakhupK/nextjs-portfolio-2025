@@ -25,7 +25,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="bg-[url(https://i.ibb.co/dwhcf5n5/7011.jpg)] h-[330px] bg-center bg-no-repeat bg-cover flex justify-center items-center">
+      <div className="bg-[url('/footer.jpg')] h-[330px] bg-center bg-no-repeat bg-cover flex justify-center items-center">
         {/* เนื้อหา */}
         <div className="relative z-10 text-center text-white">
           <h1 className="font-bold text-[36px]">{t("title")}</h1>
