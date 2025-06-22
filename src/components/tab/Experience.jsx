@@ -94,7 +94,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="container-box">
+    <section data-aos="fade-up" className="container-box">
       <div className="flex gap-10">
         <div>
           <h1 className="title-header-box">{t("experienceTitle")}</h1>

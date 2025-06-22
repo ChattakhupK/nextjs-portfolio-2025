@@ -1,5 +1,6 @@
+'use client'
 import { useTranslations } from "next-intl";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Header = () => {
   const t = useTranslations("Header");
@@ -10,7 +11,7 @@ const Header = () => {
       <div className="absolute inset-0 bg-black opacity-20 z-0 h-[700px]"></div>
 
       {/* เนื้อหา */}
-      <div className="relative z-10 text-center text-white">
+      <div data-aos="fade-down" className="relative z-10 text-center text-white">
         <span className="font-light text-[20px]">{t("sub")}</span>
         <h1 className="font-bold text-[36px]">{t("title")}</h1>
         <h2 className="font-bold text-[36px]">

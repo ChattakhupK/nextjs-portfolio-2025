@@ -46,7 +46,7 @@ const Contact = () => {
   );
 
   return (
-    <section className="container-box">
+    <section data-aos="fade-up" className="container-box">
       {toast && (
         <Toast
           message={toast.message}

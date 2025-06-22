@@ -27,7 +27,10 @@ const Footer = () => {
     <footer>
       <div className="bg-[url('/footer.jpg')] h-[330px] bg-center bg-no-repeat bg-cover flex justify-center items-center">
         {/* เนื้อหา */}
-        <div className="relative z-10 text-center text-white">
+        <div
+          data-aos="fade-down"
+          className="relative z-10 text-center text-white"
+        >
           <h1 className="font-bold text-[36px]">{t("title")}</h1>
           <span className="font-light text-[18px]">{t("subtitle")}</span>
         </div>

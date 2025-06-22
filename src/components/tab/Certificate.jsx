@@ -30,7 +30,7 @@ const Certificate = () => {
   };
 
   return (
-    <section className="container-box">
+    <section data-aos="fade-up" className="container-box">
       <div className="flex flex-col gap-6">
         <div>
           <h1 className="title-header-box">{t("certificateTitle")}</h1>

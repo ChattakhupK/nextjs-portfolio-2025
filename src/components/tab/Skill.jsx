@@ -58,7 +58,7 @@ const skills = [
 const Skill = () => {
   const t = useTranslations("Skill");
   return (
-    <section className="container-box">
+    <section data-aos="fade-up" className="container-box">
       <div>
         <h1 className="title-header-box">{t("skillTitle")}</h1>
         <p>{t("skillp")}</p>

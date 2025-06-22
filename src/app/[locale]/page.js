@@ -8,6 +8,8 @@ import Skill from "@/src/components/tab/Skill";
 import TabBar from "@/src/components/TabBar";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   const searchParams = useSearchParams();
@@ -15,6 +17,8 @@ export default function Home() {
   const [tab, setTab] = useState("about");
 
   useEffect(() => {
+    Aos.init();
+
     if (tabParam) {
       setTab(tabParam);
     }

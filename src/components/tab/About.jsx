@@ -13,7 +13,7 @@ const About = () => {
   const t = useTranslations("About");
 
   return (
-    <section className="container-box">
+    <section data-aos="fade-up" className="container-box">
       {/* ส่วนหัวและรูปโปรไฟล์ */}
       <div className="flex flex-col md:flex-row gap-10 justify-center items-center">
         <div className="flex-shrink-0">

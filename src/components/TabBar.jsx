@@ -1,6 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const TabBar = ({ onChange }) => {
   const t = useTranslations("TabBar");
@@ -38,7 +38,7 @@ const TabBar = ({ onChange }) => {
               }
             `}
           >
-            {tab.label}
+            <span data-aos="fade-up">{tab.label}</span>
           </button>
         );
       })}
