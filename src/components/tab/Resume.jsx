@@ -13,11 +13,11 @@ const Resume = () => {
           <p>{t("resumep")}</p>
           <div className="flex flex-wrap justify-center items-center gap-2 my-10">
             <Image
-              src="https://i.ibb.co/nsFgR40d/Resume-eng-ver.png"
+              src="https://i.ibb.co/wh6sry87/resume-pages-to-jpg-0001.jpg"
               width={300}
             />
             <Image
-              src="https://i.ibb.co/rRzxxw39/Resume-thai-ver.png"
+              src="https://i.ibb.co/vxQ3B1YR/resume-pages-to-jpg-0002.jpg"
               width={300}
             />
           </div>
