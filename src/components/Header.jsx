@@ -6,9 +6,9 @@ const Header = () => {
   const t = useTranslations("Header");
 
   return (
-    <header className="bg-[url('/header.jpeg')] h-[700px] bg-center bg-no-repeat bg-cover flex justify-center items-center">
+    <header className="bg-[url('/header.png')] h-[700px] bg-center bg-no-repeat bg-cover flex justify-center items-center">
       {/* Overlay สีดำแบบโปร่ง */}
-      <div className="absolute inset-0 bg-black opacity-20 z-0 h-[700px]"></div>
+      <div className="absolute inset-0 bg-black opacity-50 z-0 h-[700px]"></div>
 
       {/* เนื้อหา */}
       <div data-aos="fade-down" className="relative z-10 text-center text-white">

@@ -14,7 +14,7 @@ import "aos/dist/aos.css";
 export default function Home() {
   const searchParams = useSearchParams();
   const tabParam = searchParams.get("tab");
-  const [tab, setTab] = useState("about");
+  const [tab, setTab] = useState("About");
 
   useEffect(() => {
     Aos.init();

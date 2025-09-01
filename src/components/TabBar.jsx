@@ -6,6 +6,15 @@ const TabBar = ({ onChange }) => {
   const t = useTranslations("TabBar");
   const [activeTab, setActiveTab] = useState("");
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setActiveTab("About");
+      onChange?.("About");
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleTabClick = (tab) => {
     setActiveTab(tab);
     onChange(tab);
