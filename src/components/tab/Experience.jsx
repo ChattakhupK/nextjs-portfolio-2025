@@ -65,7 +65,7 @@ const Experience = () => {
       description: t("e8"),
       imageUrl: "https://i.ibb.co/TxNwDVCH/image-11-Cz8-S970-A.png",
       demoLink:
-        "https://www.figma.com/proto/ucgxJ2WNQtmOaykdQA9NVU/LINE-MAN-by-Vat?node-id=25-1754&starting-point-node-id=25%3A914",
+        "https://chattakhupk.github.io/STATIC-PAGE-INFO-SPACE-HTML/",
       githubLink: "https://github.com/ChattakhupK/STATIC-PAGE-INFO-SPACE-HTML",
     },
     {

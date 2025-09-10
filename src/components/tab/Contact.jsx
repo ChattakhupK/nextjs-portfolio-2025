@@ -117,7 +117,7 @@ const Contact = () => {
           <div className="mt-10 flex flex-wrap items-center gap-10">
             <Image
               preview={false}
-              src="https://i.ibb.co/4w5nV2xn/495879285-122264982080142714-787586638357092468-n.jpg"
+              src="/me/IMG_1448.jpg"
               width={200}
               height={200}
               className="object-cover rounded-md shadow-md"
