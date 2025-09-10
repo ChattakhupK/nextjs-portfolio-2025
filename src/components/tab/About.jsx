@@ -4,9 +4,9 @@ import React from "react";
 
 // รูปภาพสำหรับ gallery
 const galleryImages = [
-  "https://i.ibb.co/mCX673DM/IMG-1448.jpg",
-  "https://i.ibb.co/LD5W7Tpr/IMG-2651.jpg",
-  "https://i.ibb.co/B5SZvG8n/IMG-2756.jpg",
+  "/me/IMG_1448.jpg",
+  "/me/IMG_2651.jpg",
+  "/me/IMG_2756.jpg",
 ];
 
 const About = () => {

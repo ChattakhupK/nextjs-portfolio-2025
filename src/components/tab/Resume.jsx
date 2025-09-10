@@ -11,15 +11,9 @@ const Resume = () => {
         <div>
           <h1 className="title-header-box">{t("resumeTitle")}</h1>
           <p>{t("resumep")}</p>
-          <div className="flex flex-wrap justify-center items-center gap-2 my-10">
-            <Image
-              src="https://i.ibb.co/wh6sry87/resume-pages-to-jpg-0001.jpg"
-              width={300}
-            />
-            <Image
-              src="https://i.ibb.co/vxQ3B1YR/resume-pages-to-jpg-0002.jpg"
-              width={300}
-            />
+          <div className="flex flex-wrap justify-center items-center gap-4 my-10">
+            <Image src="/resume/resume(1)_page-0001.jpg" width={300} />
+            <Image src="/resume/resume(1)_page-0002.jpg" width={300} />
           </div>
           <p>{t("resumep1")}</p>
         </div>

@@ -3,20 +3,20 @@ import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
 const certificateImages = [
-  "https://i.ibb.co/tPDQnPt1/65b0c088385b4ab6d6baefdc-1.png",
-  "https://i.ibb.co/jZMV305d/65b517eea5110bcf3ea7f223.png",
-  "https://i.ibb.co/vvkKFdcB/65c5ed772dc2a137b58b1f8e.png",
-  "https://i.ibb.co/VWnDJ5mS/65e8e8df5b0b14ee4ffd3894.png",
-  "https://i.ibb.co/0jD930rn/66b07dbf60c10938b8cee257-1.png",
-  "https://i.ibb.co/zWSVs9g9/6566b5304dc5627511a56a48-1.png",
-  "https://i.ibb.co/DH8F7zc9/6578f263b7906fc7d0fa929f-1.png",
-  "https://i.ibb.co/TxPC1SW0/66415f23f3c26f4d4a9b4a29.png",
-  "https://i.ibb.co/6cNfcdtT/borntodev-acdemy-Git-Hub-for-Developer-certifiacte.png",
-  "https://i.ibb.co/zHt5zHL5/borntodev-acdemy-Introduction-to-Computer-Science-certifiacte.png",
-  "https://i.ibb.co/C5MSq7tQ/borntodev-acdemy-Introduction-to-Java-Script-certifiacte.png",
-  "https://i.ibb.co/KzNXcWD3/borntodev-acdemy-Lite-Fundamental-Web-Dev-with-HTML5-CSS3-certifiacte.png",
-  "https://i.ibb.co/VpCHtWKz/certificate.png",
-  "https://i.ibb.co/MDbxW4R9/ey-Ju-YW1l-Ijoi-Q2hhd-HRha2h1c-CBLa-W5hd-WJvbi-IsIm-Nvd-XJz-ZSI6Im1j-Iiwi-ZG9ub3-Ii-Oi-JHb29nb-GUi.jpg",
+  "cer/65b0c088385b4ab6d6baefdc-1.png",
+  "cer/65b517eea5110bcf3ea7f223.png",
+  "cer/65c5ed772dc2a137b58b1f8e.png",
+  "cer/65e8e8df5b0b14ee4ffd3894.png",
+  "cer/66b07dbf60c10938b8cee257-1.png",
+  "cer/6566b5304dc5627511a56a48-1.png",
+  "cer/6578f263b7906fc7d0fa929f-1.png",
+  "cer/66415f23f3c26f4d4a9b4a29.png",
+  "cer/borntodev-acdemy_GitHub for Developer _certifiacte.png",
+  "cer/borntodev-acdemy_Introduction to Computer Science_certifiacte.png",
+  "cer/borntodev-acdemy_Introduction to JavaScript_certifiacte.png",
+  "cer/borntodev-acdemy_Lite _ Fundamental Web Dev with HTML5 & CSS3_certifiacte.png",
+  "cer/certificate.png",
+  "cer/eyJuYW1lIjoiQ2hhdHRha2h1cCBLaW5hdWJvbiIsImNvdXJzZSI6Im1jIiwiZG9ub3IiOiJHb29nbGUifQ==.jpg",
 ];
 
 const Certificate = () => {
