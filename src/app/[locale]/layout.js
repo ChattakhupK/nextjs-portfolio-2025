@@ -38,7 +38,13 @@ export default async function RootLayout({ children }) {
           <AntdRegistry>
             <ConfigProvider
               theme={{
+                token: {
+                  fontFamily: "var(--font-inter), var(--font-thai)",
+                },
                 components: {
+                  Typography: {
+                    fontSize: "16px",
+                  },
                   Switch: {
                     colorPrimary: "#A61205", // สีเมื่อเปิด (TH)
                     colorPrimaryHover: "#8C4A3B", // สีเมื่อเปิดและโฮเวอร์

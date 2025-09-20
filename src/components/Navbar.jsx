@@ -11,7 +11,7 @@ const Navbar = ({ params }) => {
   return (
     <div className="px-20 py-5 flex justify-between items-center fixed w-full bg-gradient-to-b from-black to-transparent z-50">
       <span className="font-black text-[32px] select-none text-[#FFFFFF]">
-        CKPORT
+        PORTFOLIO
       </span>
 
       <div className="flex">

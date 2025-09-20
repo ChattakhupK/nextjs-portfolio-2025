@@ -18,5 +18,5 @@ body {
 }
 
 .title-header-box {
-    @apply font-black text-[42px]
+  @apply font-black text-[42px];
 }

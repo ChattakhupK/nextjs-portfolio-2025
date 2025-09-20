@@ -1,3 +1,5 @@
+import Paragraph from "antd/es/typography/Paragraph";
+import Title from "antd/es/typography/Title";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
@@ -31,8 +33,8 @@ const Footer = () => {
           data-aos="fade-down"
           className="relative z-10 text-center text-white"
         >
-          <h1 className="font-bold text-[36px]">{t("title")}</h1>
-          <span className="font-light text-[18px]">{t("subtitle")}</span>
+          <Title className="!text-white">{t("title")}</Title>
+          <Paragraph className="!text-white">{t("subtitle")}</Paragraph>
         </div>
       </div>
       <div className="bg-white h-[70px] flex text-black justify-between items-center px-20">

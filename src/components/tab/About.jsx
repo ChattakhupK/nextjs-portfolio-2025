@@ -1,8 +1,11 @@
+"use client";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
+import { Typography, Row, Col, Card } from "antd";
 
-// รูปภาพสำหรับ gallery
+const { Title, Paragraph } = Typography;
+
 const galleryImages = [
   "/me/IMG_1448.jpg",
   "/me/IMG_2651.jpg",
@@ -13,49 +16,54 @@ const About = () => {
   const t = useTranslations("About");
 
   return (
-    <section data-aos="fade-up" className="container-box">
-      {/* ส่วนหัวและรูปโปรไฟล์ */}
-      <div className="flex flex-col md:flex-row gap-10 justify-center items-center">
-        <div className="flex-shrink-0">
+    <section data-aos="fade-up" className="container-box px-4 md:px-0 py-10">
+      <Row
+        gutter={[16, 16]}
+        justify="center"
+        align="middle"
+        className="mb-10 !max-w-[800px]"
+      >
+        <Col xs={24} md={10} className="flex justify-center">
           <Image
-            alt={"Profile Image"}
+            alt="Profile Image"
             priority
             src="https://i.ibb.co/ZPwCNbQ/S-6774787-1.jpg"
             width={250}
             height={300}
             className="rounded-lg object-cover shadow-md"
           />
-        </div>
-        <div className="max-w-[560px] text-center md:text-left">
-          <h1 className="title-header-box">{t("aboutTitle")}</h1>
-          <p className="mt-4">{t("aboutp")}</p>
-        </div>
-      </div>
+        </Col>
+        <Col xs={24} md={14}>
+          <Title level={1} className="text-center md:text-left">
+            {t("aboutTitle")}
+          </Title>
+          <Paragraph className="mt-4 text-gray-700">{t("aboutp")}</Paragraph>
+        </Col>
+      </Row>
 
-      {/* ย่อหน้าแรก */}
-      <div className="my-10 text-justify leading-relaxed text-gray-700">
+      <Paragraph className="my-10 text-center leading-relaxed text-gray-700">
         {t("aboutp1")}
-      </div>
+      </Paragraph>
 
-      {/* แกลเลอรีภาพ */}
-      <div className="flex flex-wrap justify-center items-center gap-5">
+      <Row gutter={[16, 16]} justify="center">
         {galleryImages.map((src, index) => (
-          <Image
-            key={index}
-            alt={`Gallery image ${index + 1}`}
-            src={src}
-            width={250}
-            height={300}
-            className="object-cover rounded-md w-[250px] h-[300px] shadow-md transition-transform hover:scale-105"
-            priority={index === 0}
-          />
+          <Col key={index} xs={24} sm={12} md={8}>
+            <div className="relative w-full h-[250px] overflow-hidden rounded-md shadow-md">
+              <Image
+                alt={`Gallery image ${index + 1}`}
+                src={src}
+                fill
+                className="object-cover transition-transform hover:scale-105"
+                priority={index === 0}
+              />
+            </div>
+          </Col>
         ))}
-      </div>
+      </Row>
 
-      {/* ย่อหน้าสุดท้าย */}
-      <div className="my-10 text-justify leading-relaxed text-gray-700">
+      <Paragraph className="my-10 text-center leading-relaxed text-gray-700">
         {t("aboutp2")}
-      </div>
+      </Paragraph>
     </section>
   );
 };

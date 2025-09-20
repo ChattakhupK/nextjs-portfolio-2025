@@ -1,4 +1,6 @@
 import { Image } from "antd";
+import Paragraph from "antd/es/typography/Paragraph";
+import Title from "antd/es/typography/Title";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
@@ -33,8 +35,8 @@ const Certificate = () => {
     <section data-aos="fade-up" className="container-box">
       <div className="flex flex-col gap-6">
         <div>
-          <h1 className="title-header-box">{t("certificateTitle")}</h1>
-          <p>{t("certificatep")}</p>
+          <Title level={1}>{t("certificateTitle")}</Title>
+          <Paragraph>{t("certificatep")}</Paragraph>
         </div>
 
         {/* Flex แสดงรูป */}

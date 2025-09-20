@@ -10,6 +10,7 @@ import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Card } from "antd";
 
 export default function Home() {
   const searchParams = useSearchParams();
@@ -52,9 +53,12 @@ export default function Home() {
   return (
     <div className="container mx-auto my-10">
       <TabBar onChange={setTab} />
-      <div className="mt-10 bg-[#e7e7e7] rounded-md max-w-[1280px] mx-auto">
+      <Card
+        data-aos="fade-up"
+        className="!mt-10 !bg-[#f0f0f0] !rounded-4xl !max-w-[1280px] !mx-auto"
+      >
         {renderContent()}
-      </div>
+      </Card>
     </div>
   );
 }

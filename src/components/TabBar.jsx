@@ -1,11 +1,22 @@
 "use client";
 import { useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
+import { Button } from "antd";
+
+const tabsData = [
+  "About",
+  "Skill",
+  "Certificate",
+  "Resume",
+  "Experience",
+  "Contact",
+];
 
 const TabBar = ({ onChange }) => {
   const t = useTranslations("TabBar");
   const [activeTab, setActiveTab] = useState("");
 
+  // ตั้ง default tab หลังจาก mount
   useEffect(() => {
     const timer = setTimeout(() => {
       setActiveTab("About");
@@ -13,42 +24,34 @@ const TabBar = ({ onChange }) => {
     }, 500);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [onChange]);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
-    onChange(tab);
+    onChange?.(tab);
   };
 
-  const tabs = [
-    { key: "About", label: t("about") },
-    { key: "Skill", label: t("skill") },
-    { key: "Certificate", label: t("certificate") },
-    { key: "Resume", label: t("resume") },
-    { key: "Experience", label: t("experience") },
-    { key: "Contact", label: t("contact") },
-  ];
-
   return (
-    <nav className="flex flex-wrap justify-around mt-[30px] max-w-[800px] mx-auto">
-      {tabs.map((tab) => {
-        const isActive = activeTab === tab.key;
+    <nav className="flex flex-wrap justify-around mt-8 max-w-3xl mx-auto">
+      {tabsData.map((tabKey) => {
+        const isActive = activeTab === tabKey;
         return (
-          <button
-            key={tab.key}
-            onClick={() => handleTabClick(tab.key)}
-            className={`relative uppercase cursor-pointer text-[18px] font-bold text-black transition-all duration-300
-              hover:text-black after:transition-all after:duration-300
-              after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[4px]
-              ${
-                isActive
-                  ? "after:w-full after:bg-black"
-                  : "after:w-0 after:bg-black hover:after:w-full"
-              }
+          <Button
+            key={tabKey}
+            type="ghost"
+            onClick={() => handleTabClick(tabKey)}
+            className={`
+              relative uppercase transition-all duration-300
+              px-2 py-1 text-black hover:text-black
+              after:absolute after:left-0 after:-bottom-1 after:h-[3px] after:block after:bg-black after:transition-all after:duration-300
+              ${isActive ? "after:w-full" : "after:w-0 hover:after:w-full"}
             `}
+            aria-current={isActive ? "page" : undefined}
           >
-            <span data-aos="fade-up">{tab.label}</span>
-          </button>
+            <span className="text-lg font-medium" data-aos="fade-up">
+              {t(tabKey.toLowerCase())}
+            </span>
+          </Button>
         );
       })}
     </nav>

@@ -2,11 +2,21 @@ import { Image } from "antd";
 import { useTranslations } from "next-intl";
 import React from "react";
 import Cardexp from "../Cardexp";
+import Title from "antd/es/typography/Title";
+import Paragraph from "antd/es/typography/Paragraph";
 
 const Experience = () => {
   const t = useTranslations("Experience");
 
   const experienceData = [
+    {
+      title: "PC ECOM",
+      description: t("e1"),
+      imageUrl: "",
+      demoLink:
+        "",
+      githubLink: "",
+    },
     {
       title: "Figma UI Portfolio",
       description: t("e1"),
@@ -64,8 +74,7 @@ const Experience = () => {
       title: "Static Page Info",
       description: t("e8"),
       imageUrl: "https://i.ibb.co/TxNwDVCH/image-11-Cz8-S970-A.png",
-      demoLink:
-        "https://chattakhupk.github.io/STATIC-PAGE-INFO-SPACE-HTML/",
+      demoLink: "https://chattakhupk.github.io/STATIC-PAGE-INFO-SPACE-HTML/",
       githubLink: "https://github.com/ChattakhupK/STATIC-PAGE-INFO-SPACE-HTML",
     },
     {
@@ -97,8 +106,8 @@ const Experience = () => {
     <section data-aos="fade-up" className="container-box">
       <div className="flex gap-10">
         <div>
-          <h1 className="title-header-box">{t("experienceTitle")}</h1>
-          <p>{t("experiencep")}</p>
+          <Title className="title-header-box">{t("experienceTitle")}</Title>
+          <Paragraph>{t("experiencep")}</Paragraph>
           <div className="flex flex-wrap gap-5 mt-6 justify-center">
             {experienceData.map((item, index) => (
               <Cardexp

@@ -6,6 +6,9 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import emailjs from "@emailjs/browser";
+import Title from "antd/es/typography/Title";
+import Text from "antd/es/typography/Text";
+import Paragraph from "antd/es/typography/Paragraph";
 
 const Contact = () => {
   const t = useTranslations("Contact");
@@ -56,8 +59,8 @@ const Contact = () => {
       )}
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="flex-1">
-          <h1 className="title-header-box">{t("contactTitle")}</h1>
-          <p>{t("contactp")}</p>
+          <Title className="title-header-box">{t("contactTitle")}</Title>
+          <Paragraph>{t("contactp")}</Paragraph>
 
           <div className=" mx-auto mt-6 p-6 bg-white rounded-md shadow-md">
             <Form form={form} layout="vertical" onFinish={onFinish}>
@@ -127,15 +130,15 @@ const Contact = () => {
             <div className="border-l-4 border-black px-8 py-4 flex flex-col gap-4 justify-center">
               <div className="flex items-center gap-2">
                 <FaLocationDot size={20} />
-                <span>{t("locat")}</span>
+                <Text>{t("locat")}</Text>
               </div>
               <div className="flex items-center gap-2">
                 <FaPhoneAlt size={20} />
-                <span>{t("phone")}</span>
+                <Text>{t("phone")}</Text>
               </div>
               <div className="flex items-center gap-2">
                 <MdEmail size={20} />
-                <span>{t("showmail")}</span>
+                <Text>{t("showmail")}</Text>
               </div>
             </div>
           </div>
