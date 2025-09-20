@@ -9,7 +9,7 @@ const Cardexp = ({
   githubLink = "",
 }) => {
   return (
-    <div className="w-[250px] h-[320px] bg-white rounded-2xl overflow-hidden shadow-md flex flex-col justify-between transition-transform hover:-translate-y-1 hover:shadow-lg">
+    <div className="w-[242px] h-[320px] bg-white rounded-2xl overflow-hidden shadow-md flex flex-col justify-between transition-transform hover:-translate-y-1 hover:shadow-lg">
       <div>
         <Image
           priority="true"

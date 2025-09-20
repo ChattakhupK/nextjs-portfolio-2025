@@ -61,6 +61,7 @@
   "Experience": {
     "experienceTitle": "Experience",
     "experiencep": "This work reflects real experiences from actual practice and using the skills that are available. (Some works may have errors due to the database being lost because the database cannot be kept forever.)",
+    "e0": "My latest project is a better ecommerce system than my previous projects, ready for real use. The front end is decorated with Tailwind+Antd, creating a beautiful, modern UI. The back end is Nodejs, with every API written by me. And there's a real payment system with Stripe.",
     "e1": "This is a portfolio that is now in the 2025 and once again, the content is simple and easy to understand with new features like web-based messaging.",
     "e2": "Front end web page during the time I was working on writing web pages for a company, following the brief I received.",
     "e3": "Front end web page during the time I was working on writing web pages for a company, following the brief I received.",
