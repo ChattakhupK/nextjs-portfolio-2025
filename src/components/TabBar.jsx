@@ -32,7 +32,10 @@ const TabBar = ({ onChange }) => {
   };
 
   return (
-    <nav className="flex flex-wrap justify-around mt-8 max-w-3xl mx-auto">
+    <nav
+      data-aos="fade-up"
+      className="flex flex-wrap justify-around mt-8 max-w-3xl mx-auto"
+    >
       {tabsData.map((tabKey) => {
         const isActive = activeTab === tabKey;
         return (
@@ -42,13 +45,13 @@ const TabBar = ({ onChange }) => {
             onClick={() => handleTabClick(tabKey)}
             className={`
               relative uppercase transition-all duration-300
-              px-2 py-1 text-black hover:text-black
+              !px-0 !py-1 text-black hover:text-black
               after:absolute after:left-0 after:-bottom-1 after:h-[3px] after:block after:bg-black after:transition-all after:duration-300
-              ${isActive ? "after:w-full" : "after:w-0 hover:after:w-full"}
+              ${isActive ? "after:!w-full" : "after:!w-0 hover:!after:!w-full"}
             `}
             aria-current={isActive ? "page" : undefined}
           >
-            <span className="text-lg font-medium" data-aos="fade-up">
+            <span className="text-lg font-medium">
               {t(tabKey.toLowerCase())}
             </span>
           </Button>

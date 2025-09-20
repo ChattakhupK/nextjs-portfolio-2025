@@ -1,5 +1,6 @@
 "use client";
 import { Button, Space, Typography } from "antd";
+import Paragraph from "antd/es/typography/Paragraph";
 import { useTranslations } from "next-intl";
 import React, { useEffect } from "react";
 
@@ -19,9 +20,9 @@ const Header = () => {
         className="relative z-10 text-center text-white space-y-4 px-4"
       >
         {/* Subtext */}
-        <Title level={3} className="!text-white">
+        <Paragraph level={3} className="!text-white !-mb-5">
           {t("sub")}
-        </Title>
+        </Paragraph>
 
         {/* Main Title */}
         <Title
