@@ -14,8 +14,8 @@ const Experience = () => {
       title: "Ecommerce-2025",
       description: t("e0"),
       imageUrl: "/exp/exp1.png",
-      demoLink: "",
-      githubLink: "",
+      demoLink: "https://lnwcom-web-by-chattakhupk.vercel.app/",
+      githubLink: "https://github.com/ChattakhupK/LNWCOM-ECOM-FE",
     },
   ];
 
