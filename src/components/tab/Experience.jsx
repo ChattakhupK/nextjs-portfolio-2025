@@ -11,15 +11,22 @@ const Experience = () => {
 
   const experienceDataHot = [
     {
+      title: "New Portfolio",
+      description: '',
+      imageUrl: "/exp/exp2.png",
+      demoLink: "https://modern-portfolio-sand-gamma.vercel.app/",
+      githubLink: "",
+    },
+  ];
+
+  const experienceData = [
+    {
       title: "Ecommerce-2025",
       description: t("e0"),
       imageUrl: "/exp/exp1.png",
       demoLink: "https://lnwcom-web-by-chattakhupk.vercel.app/",
       githubLink: "https://github.com/ChattakhupK/LNWCOM-ECOM-FE",
     },
-  ];
-
-  const experienceData = [
     {
       title: "Figma UI Portfolio",
       description: t("e1"),

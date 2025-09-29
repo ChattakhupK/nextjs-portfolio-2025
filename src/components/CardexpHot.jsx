@@ -9,7 +9,7 @@ const CardexpHot = ({
   githubLink = "",
 }) => {
   return (
-    <Badge.Ribbon text="กำลังพัฒนา" color="red">
+    <Badge.Ribbon text="ใหม่" color="red">
       <div className="max-w-[500px] w-full bg-white rounded-2xl overflow-hidden shadow-md flex flex-col justify-between transition-transform hover:-translate-y-1 hover:shadow-lg">
         <div>
           <Image
