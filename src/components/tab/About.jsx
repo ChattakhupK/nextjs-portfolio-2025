@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import { Typography, Row, Col, Card } from "antd";
+import CardexpHot from "../CardexpHot";
 
 const { Title, Paragraph } = Typography;
 
@@ -12,12 +13,27 @@ const galleryImages = [
   "/me/IMG_2756.jpg",
 ];
 
+const experienceDataHot = [
+  {
+    title: "New Portfolio",
+    description: "ย้ายไปลงที่ใหม่",
+    imageUrl: "/exp/exp2.png",
+    demoLink: "https://modern-portfolio-sand-gamma.vercel.app/",
+    githubLink: "",
+  },
+];
+
 const About = () => {
   const t = useTranslations("About");
 
   return (
     <section data-aos="fade-up" className="container-box px-4 md:px-0 py-10">
-      <Row
+      <div className="flex flex-col items-center">
+        {experienceDataHot.map((item, index) => (
+          <CardexpHot key={index} {...item} />
+        ))}
+      </div>
+      {/* <Row
         gutter={[16, 16]}
         justify="center"
         align="middle"
@@ -40,11 +56,9 @@ const About = () => {
           <Paragraph className="mt-4 text-gray-700">{t("aboutp")}</Paragraph>
         </Col>
       </Row>
-
       <Paragraph className="my-10 text-center leading-relaxed text-gray-700">
         {t("aboutp1")}
       </Paragraph>
-
       <Row gutter={[16, 16]} justify="center">
         {galleryImages.map((src, index) => (
           <Col key={index} xs={24} sm={12} md={8}>
@@ -60,10 +74,9 @@ const About = () => {
           </Col>
         ))}
       </Row>
-
       <Paragraph className="my-10 text-center leading-relaxed text-gray-700">
         {t("aboutp2")}
-      </Paragraph>
+      </Paragraph> */}
     </section>
   );
 };
